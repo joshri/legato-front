@@ -1,7 +1,6 @@
-
 import '../App.css';
 import Amplify, { Auth } from 'aws-amplify';
-import awsconfig from '../aws-exports';
+import awsconfig from './aws-exports';
 import Header from './Header';
 Amplify.configure(awsconfig);
 
