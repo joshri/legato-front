@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
 import { Auth } from 'aws-amplify';
-import {
-	Authenticator,
-	SignIn,
-	SignUp,
-	ConfirmSignUp,
-	Greetings,
-} from 'aws-amplify-react';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 
-function SignUpForm(props) {
+function Authentication(props) {
 	let [user, setUser] = useState({ username: '', password: '' });
 
 	async function signUp(user) {
@@ -44,8 +38,8 @@ function SignUpForm(props) {
 	}
 
 	return <div>
-        <Authenticator></Authenticator>
-    </div>;
+        
+            </div>;
 }
 
-export default SignUpForm;
+export default withAuthenticator(Authentication);
