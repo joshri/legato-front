@@ -1,8 +1,8 @@
 import '../App.css';
 import Amplify, { Auth } from 'aws-amplify';
-import awsconfig from '../aws-exports';
+import awsmobile from '../aws-exports';
 import Header from './Header';
-Amplify.configure(awsconfig);
+Amplify.configure(awsmobile);
 
 function App() {
   return (
