@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-legato-staging-203748-authRole",
+      "UnauthRoleArn": "arn:aws:iam::288497622905:role/amplify-legato-staging-203748-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::288497622905:role/amplify-legato-staging-203748-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-legato-staging-203748-deployment",
+      "UnauthRoleName": "amplify-legato-staging-203748-unauthRole",
+      "StackName": "amplify-legato-staging-203748",
+      "StackId": "arn:aws:cloudformation:us-east-1:288497622905:stack/amplify-legato-staging-203748/6859fab0-35a7-11eb-8858-0a12c74ac309",
+      "AmplifyAppId": "d3exhskok1keiq"
+    },
+    "categories": {
+      "auth": {
+        "legato": {}
+      }
+    }
+  }
+}
