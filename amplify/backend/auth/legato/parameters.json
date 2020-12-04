@@ -1,30 +1,24 @@
 {
     "identityPoolName": "testAuthIdentityPool",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "legatobfcfadfd",
+    "resourceNameTruncated": "legatod62195ed",
     "userPoolName": "legato",
     "autoVerifiedAttributes": [
-        "phone_number"
+        "email"
     ],
     "mfaConfiguration": "OFF",
     "mfaTypes": [
         "SMS Text Message"
     ],
     "smsAuthenticationMessage": "Your authentication code is {####}",
-    "smsVerificationMessage": "Forgot password code: {####}",
-    "emailVerificationSubject": "Your verification code",
-    "emailVerificationMessage": "Your verification code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Legato Password Request",
+    "emailVerificationMessage": "Here's your verification code? {####}",
     "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 8,
-    "passwordPolicyCharacters": [
-        "Requires Lowercase",
-        "Requires Numbers",
-        "Requires Symbols",
-        "Requires Uppercase"
-    ],
+    "passwordPolicyCharacters": [],
     "requiredAttributes": [
-        "email",
-        "name"
+        "email"
     ],
     "userpoolClientGenerateSecret": true,
     "userpoolClientRefreshTokenValidity": 30,
@@ -34,9 +28,9 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "legatobfcfadfd_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "legatod62195ed_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "bfcfadfd",
+    "sharedId": "d62195ed",
     "resourceName": "legato",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
