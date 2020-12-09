@@ -1,20 +1,38 @@
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
-import { Route, Link } from 'react-router-dom';
-import Amplify, { Auth } from 'aws-amplify';
-import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
+import Amplify from 'aws-amplify';
 import awsconfig from '../aws-exports';
-import Header from './Header';
+import Mailchimp from 'react-mailchimp-form';
 Amplify.configure(awsconfig);
 
 function App() {
-	const [authState, setAuthState] = useState();
-	const [user, setUser] = useState();
-
 	return (
 		<div className='App'>
-			<Header AuthState={AuthState} onAuthUIStateChange={onAuthUIStateChange} />
+			<Mailchimp
+				action='https://legatoconnects.us2.list-manage.com/subscribe/post?u=29fc24c88a25afe7251ee87a8&amp;id=8b8af18ae4'
+				fields={[
+					{
+						name: 'EMAIL',
+						placeholder: 'Email',
+						type: 'email',
+						required: true,
+					},
+					{
+						name: 'FIRST NAME',
+						placeholder: 'First Name',
+						type: 'text',
+						required: true,
+					},
+					{
+						name: 'LAST NAME',
+						placeholder: 'Last Name',
+						type: 'text',
+						required: true,
+					},
+        ]}
+        className='mailchimp'
+			/>
 		</div>
 	);
 }
