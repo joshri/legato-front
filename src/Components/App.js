@@ -19,19 +19,19 @@ function App() {
 						required: true,
 					},
 					{
-						name: 'FIRST NAME',
+						name: 'FNAME',
 						placeholder: 'First Name',
 						type: 'text',
 						required: true,
 					},
 					{
-						name: 'LAST NAME',
+						name: 'LNAME',
 						placeholder: 'Last Name',
 						type: 'text',
 						required: true,
 					},
-        ]}
-        className='mailchimp'
+				]}
+				className='mailchimp'
 			/>
 		</div>
 	);
