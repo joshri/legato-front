@@ -9,8 +9,6 @@ Amplify.configure(awsconfig);
 
 function App() {
 	
-	
-
 	return (
 		<div className='App'>
 			<ConnectMessage />

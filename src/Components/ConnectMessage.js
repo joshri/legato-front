@@ -29,7 +29,7 @@ function ConnectMessage(props) {
 					animate={{ opacity: [0, 1, 1, 0], translateY: [0, 20, 20, 40] }}
 					transition={{ repeat: Infinity, duration: 3 }}
 					className='message'>
-					{connections[props.message][0]}
+					{connections[message][0]}
 				</motion.h1>{' '}
 			</div>
 			<h1>to </h1>
@@ -38,7 +38,7 @@ function ConnectMessage(props) {
 					animate={{ opacity: [0, 1, 1, 0], translateY: [0, 20, 20, 40] }}
 					transition={{ repeat: Infinity, duration: 3 }}
 					className='message'>
-					{connections[props.message][1]}
+					{connections[message][1]}
 				</motion.h1>
 			</div>
 		</div>
