@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion} from 'framer-motion';
 
 function ConnectMessage(props) {
 	const connections = {
@@ -7,14 +7,15 @@ function ConnectMessage(props) {
 		1: ['b', 'c'],
 	};
 
+	let [message, setMessage] = useState(0);
 
 	useEffect(() => {
 	
 		setTimeout(() => {
-			if (props.message < 1) {
-				props.setMessage(props.message + 1);
+			if (message < 1) {
+				setMessage(message + 1);
 			} else {
-				props.setMessage(0);
+				setMessage(0);
 			}
 			
 		}, 3000);
